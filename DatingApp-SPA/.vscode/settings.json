@@ -1,0 +1,23 @@
+{
+    "editor.autoIndent": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": false
+    },
+    "editor.codeLens": false,
+    "editor.cursorBlinking": "solid",
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorStyle": "line",
+    "editor.fontSize": 16,
+    "editor.fontFamily": "Dank Mono, Operator Mono, Fira Code, Inconsolata, Menlo",
+    "editor.fontLigatures": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": false,
+    "editor.formatOnSave": true,
+    "editor.letterSpacing": 0.5,
+    "editor.lineHeight": 25,
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "none",
+    "editor.tabCompletion": "on",
+    "editor.tabSize": 2,
+    "editor.wordWrap": "off",
+}
