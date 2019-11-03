@@ -16,8 +16,8 @@ model:any={};
   login(){
     this.service.login(this.model).subscribe(res=>{
         console.log('loged in successfully!');
-    },err=>{
-      console.error('unable to login, please try again!');
+    },error=>{
+      console.log(error);
     })
   }
  loggedIn(){
