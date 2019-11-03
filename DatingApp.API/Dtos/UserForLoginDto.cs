@@ -11,7 +11,6 @@ namespace DatingApp.API.Dtos
         public string UserName { get; set; }
         [Required]
         [DisplayName("Password")]
-        [StringLength(8, MinimumLength = 4)]
         [DataType(DataType.Password)]
         public string Password { get; set; }
     }
