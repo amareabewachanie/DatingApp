@@ -5,7 +5,7 @@ import { ValueComponent } from './value/value.component';
 
 const routes: Routes = [
   {
-    path:'values',
+    path:'',
     component:ValueComponent
   }
 ];
