@@ -21,7 +21,7 @@ namespace DatingApp.API.Controllers
         public async Task<IActionResult> GetValues()
         {
 
-            return Ok(new string[] { "String 1", "string 2", "string 3" });
+            return Ok();
         }
 
         // GET api/values/5

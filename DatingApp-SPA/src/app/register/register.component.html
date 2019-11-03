@@ -1,17 +1,12 @@
 <form #formRegister="ngForm" (submit)="register()">
     <h2 class="text-center text-primary">Sign Up</h2>
+    <hr>
     <div class="form-group">
       <label for="">User Name</label>
         <div class="input-group-prepend">
                 <span class="input-group-text" id="basic-addon1"><i class="fa fa-user-o" aria-hidden="true"></i></span>
         <input type="text" name="UserName" required class="form-control" placeholder="User name" [(ngModel)]="model.UserName">
         </div>
-    </div>
-      <div class="form-group">
-        <label for="">What is your favorite string?</label>
-        <select class="form-control" name="" id="">
-          <option *ngFor="let value of valuesFromHome" [value]="value">{{value}}</option>
-        </select>
     </div>
     <div class="form-group">
       <label for="">Password</label>
@@ -22,6 +17,6 @@
     </div>
     <div class="form-group text-center">
         <button class="btn btn-success btn-lg mr-3" type="submit">Register</button>
-        <button type="reset" class="btn btn-primary btn-lg">Cancel</button>
+        <button type="reset" class="btn btn-default btn-lg" (click)="cancel()">Cancel</button>
     </div>
 </form>

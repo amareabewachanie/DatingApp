@@ -16,7 +16,7 @@ values:any;
     this.getValues();
   }
   registerToggle(){
-    this.registerMode=!this.registerMode;
+    this.registerMode=true;
   }
   getValues(){
     this.http.get('http://localhost:500/api/values/').subscribe(res=>{
@@ -24,5 +24,8 @@ values:any;
     },error=>{
       console.log(error);
     })
+  }
+  cancelRegisterMode(registerMode:boolean){
+      this.registerMode=registerMode;
   }
 }
