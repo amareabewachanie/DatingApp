@@ -20,8 +20,8 @@ namespace DatingApp.API.Controllers
         [HttpGet]
         public async Task<IActionResult> GetValues()
         {
-
-            return Ok();
+            var values = await _context.Values.ToListAsync();
+            return Ok(values);
         }
 
         // GET api/values/5
@@ -40,7 +40,7 @@ namespace DatingApp.API.Controllers
 
         // PUT api/values/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public void Put(int id, string value)
         {
         }
 
